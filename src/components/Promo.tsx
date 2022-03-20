@@ -1,9 +1,7 @@
 import promo from './../img/main_bg.jpg'
-import facebook from './../icons/social/facebook.svg'
-import github from './../icons/social/github.svg'
-import instagram from './../icons/social/instagram.svg'
 import {Menu} from "./Menu";
 import {Hamburger} from "./Hamburger";
+import {useState} from "react";
 
 const background = {
     background: `url(${promo})`,
@@ -13,6 +11,12 @@ const background = {
 }
 
 export const Promo = () => {
+    const [isActiveMenu, setIsActiveMenu] = useState<boolean>(true)
+
+   const handlerActiveMenuClick = () => {
+       setIsActiveMenu(!isActiveMenu)
+   }
+
     return <>
         <aside className="sidepanel">
             <a href="#" className="sidepanel__link">
@@ -51,10 +55,10 @@ export const Promo = () => {
             </div>
         </aside>
 
-        <Menu/>
+        <Menu isActiveMenu={isActiveMenu} onActiveMenuClick={handlerActiveMenuClick}/>
 
         <section className="promo" style={background}>
-            <Hamburger/>
+            <Hamburger onActiveMenuClick={handlerActiveMenuClick}/>
             <div className="container">
                 <div className="title title_fz16 promo__subtitle">
                     Меня зовут Александра Смит
