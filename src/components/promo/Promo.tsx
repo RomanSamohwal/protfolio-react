@@ -1,4 +1,4 @@
-import promo from './../img/main_bg.jpg'
+import promo from '../../img/main_bg.jpg'
 import {Menu} from "./Menu";
 import {Hamburger} from "./Hamburger";
 import {useState} from "react";
@@ -11,7 +11,7 @@ const background = {
 }
 
 export const Promo = () => {
-    const [isActiveMenu, setIsActiveMenu] = useState<boolean>(true)
+    const [isActiveMenu, setIsActiveMenu] = useState<boolean>(false)
 
    const handlerActiveMenuClick = () => {
        setIsActiveMenu(!isActiveMenu)

@@ -1,0 +1,14 @@
+.about {
+  min-height: 100vh;
+  padding-top: 120px;
+  background-color: #ffffff;
+
+  img {
+    display: block;
+    margin-right: 68px;
+  }
+
+  &_info {
+    display: flex;
+  }
+}
