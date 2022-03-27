@@ -4,33 +4,26 @@
   height: 116px;
   margin-bottom: 20px;
 
-  &_title {
-    height: 21px;
-  }
+  &-item {
+    display: grid;
+    grid-template-columns: 40px 200px;
+    column-gap: 20px;
 
-  &_description {
-    padding-top: 6px;
-    height: 89px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: #000000;
-  }
+    &-circle {
+      position: relative;
+      padding: 13px 0 0 15px;
+      @include before_circle;
 
-  &_title, &_description {
-    padding-left: 60px;
-  }
-
-  &_img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    @include before_circle;
-    & svg {
-      position: absolute;
-      top: 15px;
-      left: 15px;
+      &:before {
+        top: 0;
+      }
     }
   }
+
+  &__text {
+    padding-top: 6px;
+    height: 89px;
+    font-size: 12px;
+  }
+
 }
