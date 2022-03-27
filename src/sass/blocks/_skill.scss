@@ -1,0 +1,36 @@
+.skill {
+  position: relative;
+  width: 260px;
+  height: 116px;
+  margin-bottom: 20px;
+
+  &_title {
+    height: 21px;
+  }
+
+  &_description {
+    padding-top: 6px;
+    height: 89px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+  }
+
+  &_title, &_description {
+    padding-left: 60px;
+  }
+
+  &_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    @include before_circle;
+    & svg {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+  }
+}
