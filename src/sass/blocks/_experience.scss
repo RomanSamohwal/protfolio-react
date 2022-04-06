@@ -1,0 +1,13 @@
+.experience {
+  padding-top: 120px;
+
+  &__card {
+    padding-left: 10px;
+    padding-top: 85px;
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(4, 270px);
+    grid-auto-rows: 1fr;
+    gap: 13px;
+  }
+
+}
