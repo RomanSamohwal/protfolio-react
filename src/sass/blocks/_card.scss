@@ -1,18 +1,22 @@
 .card {
+  position: relative;
   width: 270px;
   height: 270px;
   border: 1px solid #000000;
 
-  &__header {
-    margin: 30px 193px 0 30px;
-    img {
-      margin-bottom: 20px;
-    }
+  &-img{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  &__title {
+    padding: 115px 0 0 30px;
   }
 
   &__text {
     width: 211px;
-    margin: 15px 29px 25px 30px;
+    margin: 15px 29px 0 30px;
 
     &-item {
       font-size: 12px;
