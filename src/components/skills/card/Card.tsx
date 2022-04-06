@@ -1,19 +1,25 @@
-import html from '../../../icons/skills/html5.svg'
+import React from "react";
 
-export const Card = () => {
+type CardProps = {
+    img: any
+    title: string
+    text: string
+    alt: string
+}
+
+export const Card: React.FC<CardProps> = ({title, text, img, alt}) => {
     return <div className='card'>
 
         <div className='card__header'>
-            <img src={html} alt='html'/>
+            <img src={img} alt={alt}/>
 
             <div className='card__header-item title title_fz14'>
-                HTML5
+                {title}
             </div>
         </div>
 
         <div className='card__text card__text-item'>
-               Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более
-               SEO-оптимизированную структуру вашего продукта
+            {text}
         </div>
     </div>
 }
