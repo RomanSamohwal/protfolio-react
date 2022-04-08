@@ -7,6 +7,7 @@ import jquery from '../../icons/skills/jquery.svg'
 import react from '../../icons/skills/react.svg'
 import nodejs from '../../icons/skills/node.js.svg'
 import mongodb from '../../icons/skills/mongo.db.svg'
+import {Progress} from "./progress/Progress";
 
 export const Experience = () => {
     return <section className="experience">
@@ -50,6 +51,15 @@ export const Experience = () => {
 
                 <Card img={mongodb} title={'Mongo.db'} alt={'mongodb'}
                       text={'Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения'}/>
+            </div>
+
+            <div className='experience__progress'>
+              <Progress title={'Создание сайтов'} percent={'100%'}/>
+              <Progress title={'Создание приложений'} percent={'85%'}/>
+              <Progress title={'Работа с данными'} percent={'90%'}/>
+              <Progress title={'Креативность'} percent={'75%'}/>
+              <Progress title={'Создание дизайна'} percent={'90%'} />
+              <Progress title={'Soft skills'} percent={'95%'}/>
             </div>
 
         </div>

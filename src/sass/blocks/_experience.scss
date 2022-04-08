@@ -10,4 +10,11 @@
     gap: 13px;
   }
 
+  &__progress {
+    padding-top: 176px;
+    display: grid;
+    grid-template: repeat(2,minmax(14px, auto))/repeat(3,350px);
+    column-gap: 45px;
+    row-gap: 86px;
+  }
 }

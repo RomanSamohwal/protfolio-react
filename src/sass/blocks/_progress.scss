@@ -1,0 +1,37 @@
+.progress {
+  position: relative;
+  width: 350px;
+
+  &__title {
+    position: absolute;
+    bottom: 41px;
+    padding: 3px 0 0 12px;
+  }
+
+  &__percent {
+    position: absolute;
+    bottom: 41px;
+    left: 316px;
+  }
+
+  &__line {
+    z-index: 0;
+    position: relative;
+    background: #E8E4DE;
+
+    &-item {
+      width: 350px;
+      height: 14px;
+      border-radius: 4px;
+    }
+
+    &-load {
+      height: 14px;
+      border-radius: 4px;
+      position: absolute;
+      z-index: 1;
+      background: #FFA501;
+    }
+  }
+
+}
