@@ -7,10 +7,10 @@ import designer from '../../icons/experience/designer.svg'
 export const Resume = () => {
     return <section className='resume'>
         <div className='container'>
-            <h2 className='title title_fz16 resume__title'>
+            <h2 className='title title_fz16 title__section-title'>
                 Опыт
             </h2>
-            <div className="title title_fz36 resume__subtitle">
+            <div className="title title_fz36 title__section-subtitle">
                 Чем я буду полезна
             </div>
             <Divider/>

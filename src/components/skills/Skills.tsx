@@ -12,10 +12,10 @@ import {Progress} from "./progress/Progress";
 export const Experience = () => {
     return <section className="experience">
         <div className='container'>
-            <h2 className='title title_fz16 resume__title'>
+            <h2 className='title title_fz16 title__section-title'>
                 Навыки
             </h2>
-            <div className="title title_fz36 resume__subtitle">
+            <div className="title title_fz36 title__section-subtitle">
                 Что я использую в работе
             </div>
             <Divider/>
