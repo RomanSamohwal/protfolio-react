@@ -1,0 +1,41 @@
+.price {
+  padding-top: 120px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    column-gap: 306px;
+    padding: 60px 65px 0 65px;
+  }
+
+  &__column {
+    ul {
+      list-style: none;
+    }
+
+    ul {
+      li {
+        margin-bottom: 15px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          left: -25px;
+          top: 2px;
+          content: '';
+          width: 15px;
+          height: 15px;
+          border-radius: 100%;
+          background-color: #FFA501;
+        }
+      }
+    }
+  }
+
+  &__item {
+    &-head {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
