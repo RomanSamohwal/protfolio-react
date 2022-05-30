@@ -6,6 +6,7 @@ import {Resume} from "./components/resume/Resume";
 import {Experience} from "./components/skills/Skills";
 import {Portfolio} from "./components/portfolio/Portfolio";
 import {Price} from "./components/price/Price";
+import {Contacts} from "./components/contacts/Contacts";
 
 function App() {
     return <>
@@ -15,6 +16,7 @@ function App() {
         <Experience/>
         <Portfolio/>
         <Price/>
+        <Contacts/>
     </>
 }
 
