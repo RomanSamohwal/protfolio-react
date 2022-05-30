@@ -3,7 +3,6 @@ import React from "react";
 import {Divider} from "../common/Divider";
 import facebook from './../../icons/social/facebook2.svg'
 import telegram from './../../icons/social/telegram.svg'
-import instagram from './../../icons/social/instagram.svg'
 
 export const Contacts = () => {
     return <section className='contacts'>
@@ -40,12 +39,12 @@ export const Contacts = () => {
 
                     <form action="#" className="contacts__form">
                         <div className="contacts__input">
-                            <input name='name' id='name' type="text"/>
+                            <input required name='name' id='name' type="text"/>
                             <label htmlFor="name">Ваше имя</label>
                         </div>
 
                         <div className="contacts__input">
-                            <input name='text'  id='email' type="email"/>
+                            <input required name='text' id='email' type="email"/>
                             <label htmlFor="email">Ваша почта</label>
                         </div>
 
@@ -54,8 +53,14 @@ export const Contacts = () => {
                             <label htmlFor="text">Ваше сообщение</label>
                         </div>
 
-                        <div>
+                        <div className='contacts__triggers'>
                             <button className='contacts__btn btn'>Отправить сообщение</button>
+                            <div className="contacts__policy">
+                                <input required type="checkbox"/>
+                                <span>
+                                    Я согласен(а) с <a href="#">политикой конфиденциальности</a>
+                                </span>
+                            </div>
                         </div>
 
                     </form>
