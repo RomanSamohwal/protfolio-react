@@ -14,7 +14,10 @@
   }
 
   .title {
-    line-height: 39px;
+    &_fz48 {
+      font-size: 28px;
+      line-height: 39px;
+    }
   }
 
   .promo {
@@ -33,6 +36,30 @@
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
-    padding: 15px 0;
+    padding: 0 10px;
+  }
+
+  .title {
+    &_fz48 {
+      font-size: 26px;
+    }
+  }
+
+  .hamburger {
+    right: 20px;
+  }
+
+  .menu {
+    &__block {
+      width: 250px;
+      padding-left: 20px;
+    }
+  }
+
+  .promo {
+    background: url("../../img/main_bg.jpg") no-repeat 57%/cover;;
+    &__btns {
+      margin-top: 30px;
+    }
   }
 }

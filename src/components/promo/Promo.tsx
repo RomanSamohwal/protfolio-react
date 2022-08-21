@@ -1,19 +1,11 @@
-import promo from '../../img/main_bg.jpg'
 import {Menu} from "./Menu";
 import {Hamburger} from "./Hamburger";
 import {useState} from "react";
 
-const background = {
-    background: `url(${promo})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-}
-
 export const Promo = () => {
     const [isActiveMenu, setIsActiveMenu] = useState<boolean>(false)
 
-   const handlerActiveMenuClick = () => {
+   const handleActiveMenuClick = () => {
        setIsActiveMenu(!isActiveMenu)
    }
 
@@ -55,10 +47,10 @@ export const Promo = () => {
             </div>
         </aside>
 
-        <Menu isActiveMenu={isActiveMenu} onActiveMenuClick={handlerActiveMenuClick}/>
+        <Menu isActiveMenu={isActiveMenu} onActiveMenuClick={handleActiveMenuClick}/>
 
-        <section className="promo" style={background}>
-            <Hamburger onActiveMenuClick={handlerActiveMenuClick}/>
+        <section className="promo" >
+            <Hamburger onActiveMenuClick={handleActiveMenuClick}/>
             <div className="container">
                 <div className="title title_fz16 promo__subtitle">
                     Меня зовут Александра Смит
