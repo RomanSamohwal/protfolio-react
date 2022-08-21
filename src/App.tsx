@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import {Promo} from "./components/promo/Promo";
 import {About} from "./components/about/About";
 import {Resume} from "./components/resume/Resume";
@@ -11,12 +10,12 @@ import {Contacts} from "./components/contacts/Contacts";
 function App() {
     return <>
         <Promo/>
-        <About/>
-        <Resume/>
-        <Experience/>
-        <Portfolio/>
-        <Price/>
-        <Contacts/>
+        {/*<About/>*/}
+        {/*<Resume/>*/}
+        {/*<Experience/>*/}
+        {/*<Portfolio/>*/}
+        {/*<Price/>*/}
+        {/*<Contacts/>*/}
     </>
 }
 

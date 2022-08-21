@@ -9,7 +9,7 @@ export const Portfolio = () => {
     return <section className='portfolio'>
         <div className="container">
             <h2 className='title title_fz16 title__section-title'>Портфолио</h2>
-            <div className='title title_fz36  title__section-subtitle'>Что я использую в работе</div>
+            <div className='title title_fz36  title__section-subtitle'>Мои работы</div>
             <div className='divider'/>
 
             <div className="portfolio__wrapper">
